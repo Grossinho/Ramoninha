@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Personagens e monstros
+  - Objetos do cenario
+  - Blocos e solos
+  - Plano de fundo
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Fundos
+    uniqueID: 1724769343
+    locked: 0
+  - name: Objetos fundo
+    uniqueID: 1531576189
+    locked: 0
+  - name: Blocos e solos
+    uniqueID: 4101605855
+    locked: 0
+  - name: Objetos frente
+    uniqueID: 2302781707
+    locked: 0
+  - name: Personagens e monstros
+    uniqueID: 1174851983
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0

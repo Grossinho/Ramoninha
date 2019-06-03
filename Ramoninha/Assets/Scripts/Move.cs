@@ -46,7 +46,7 @@ public class Move : MonoBehaviour
         if (noSolo && Input.GetButtonDown("Jump"))
         {
             anim.SetBool("Pulo", false);
-            rb2d.AddForce(new Vector2(0, forcaPulo));
+            rb2d.velocity = new Vector2(0, forcaPulo);
         }
 
 
@@ -56,9 +56,10 @@ public class Move : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Finish"))
         {
-            rb2d.AddForce(new Vector2(0, forcaPulo * 1.5f));
-            anim.SetTrigger("Hit");
+            anim.SetTrigger("Dano da Ramoninha");
+            rb2d.velocity = new Vector2(0, forcaPulo * 0.8f);
         }
+        
     }
 
     private void Flip()

@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private Collider2D vivo;
     [SerializeField] private Collider2D morto;
     [SerializeField] private Collider2D cabeca;
+    [SerializeField] private Collider2D corpo;
 
     // Start is called before the first frame update
     void Start()
@@ -34,10 +35,11 @@ public class Enemy : MonoBehaviour
             trans.localScale = escala;
 
         }
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") && collision.transform.position.y > trans.position.y + 0.3f)
         {
             velocidade = 0;
             cabeca.enabled = false;
+            corpo.enabled = false;
             vivo.enabled = false;
             morto.enabled = true;
             GetComponent<Animator>().SetTrigger("Morto");
@@ -47,7 +49,7 @@ public class Enemy : MonoBehaviour
 
     IEnumerator Morre()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1.5f);
         Destroy(this.gameObject);
 
 
